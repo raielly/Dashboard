@@ -6,7 +6,7 @@
         <div class="user-img">
           <img src="../assets/icons/user-w.svg" alt="" width="30" />
         </div>
-        <div class="user-info">
+        <div v-if="userStore" class="user-info">
           <div class="user-name">
             {{ userStore.firstName }} {{ userStore.lastName }}
           </div>
